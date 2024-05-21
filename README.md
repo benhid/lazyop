@@ -30,10 +30,21 @@ Build the project with the following command:
 go build
 ```
 
+Alternatively build it as a Docker image with:
+
+```bash
+docker build . -t benhid/lazyop
+```
 ## Run
 
 Run from your terminal with the following command:
 
 ```bash
 lazyop
+```
+
+Or using the Docker image:
+
+```bash
+docker run -it -v $(pwd)/config.json:/config.json benhid/lazyop
 ```
