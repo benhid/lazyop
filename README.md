@@ -14,7 +14,7 @@ It does not support all the features of OpenProject (nor does it intend to), but
 To configure `lazyop`, create a configuration file in `~/.config/lazyop/config.json` or your current working directory
 with the following content:
 
-```json
+```go
 {
     "base_url": "https://your.openproject.url/api/v3/",
     "user_id": 0, // your OpenProject user ID, which can be found on your profile page URL
