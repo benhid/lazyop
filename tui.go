@@ -354,7 +354,7 @@ func (tui *Tui) showEditTimeEntryForm(client *Client, workPackageIndex int) {
 			tui.App.SetFocus(tui.TimeEntriesTable)
 		})
 
-	form.SetBorder(true).SetTitle(fmt.Sprintf("Edit Time Entry %s", timeEntryId)).SetTitleAlign(tview.AlignCenter)
+	form.SetBorder(true).SetTitle(fmt.Sprintf("Edit Time Entry %d", timeEntryId)).SetTitleAlign(tview.AlignCenter)
 	form.SetBorderColor(tcell.ColorYellow)
 	form.SetTitleColor(tcell.ColorYellow)
 	form.SetCancelFunc(func() {
